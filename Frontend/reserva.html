@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reserva.html</title>
+
+    <link rel="stylesheet" href="style.cc">
+    
+</head>
+<body>
+    <header>
+        <section>
+            <h1>Formulário para reserva de viagem</h1><br>
+            <form method="get" action="">
+                <fieldset>
+                    <legend>Dados do usuário</legend>
+                    
+                    <label for="text">Nome</label><br>
+                    <input type="text" name="nome"><br><br>
+
+                    <label for="email">Email</label><br>
+                    <input type="email" name="email"><br><br>
+
+                </fieldset>
+                <br>
+                <fieldset>
+                    <legend>Serviços Desejados</legend>
+                    <label for="serviços">Quais serviços deseja contratar ?</label>
+                    <br><input type="checkbox" name="compraPassagens" value="compraPassagens">Compra de passagens
+                    <br><input type="checkbox" name="reservaHospedagem" value="reservaHospedagem">Reserva e Hospedagem
+                    <br><input type="checkbox" name="aluguelVeiculos" value="aluguelVeiculos">Aluguel de Veículos
+                </fieldset>
+                <br>
+                <fieldset>
+                    <legend>Escolha a forma de pagamento</legend>
+                    <label>
+                        <input type="radio" name="formaPagamento" value="cartaoCredito">Cartão de crédito
+                    </label>
+                    <label>
+                        <br><input type="radio" name="formaPagamento" value="boleto">Boleto
+                    </label>
+                    <label>
+                        <br><input type="radio" name="formaPagamento" value="pix">Pix
+                    </label>
+                </fieldset>
+                <br>
+                <fieldset>
+                    <legend>Prazo para pagamento</legend>
+                    <select name="Prazo pagamento">
+                        <option value="aVista" selected>A vista</option>
+                        <option value="5x">5x sem juros</option>
+                        <option value="10x">10x com juros</option>
+                    </select>
+                </fieldset>
+                <br>
+                <input type="submit" value="enviar">
+            </form>
+        </section>
+    </header>
+</body>
+</html>

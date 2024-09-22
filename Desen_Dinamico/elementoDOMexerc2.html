@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atividade do DOM 2</title>
+</head>
+<body>
+    <p>TIMES DE FUTEBOL</p>
+    <ul id="lista">
+
+    </ul>
+
+    <ul class="listaTimes">
+
+    </ul>
+</body>
+<script>
+    var elemento = document.createElement("div");
+    elemento.innerText = "Times de futebol";
+    elemento.style.backgroundColor = "red"
+    document.body.append(elemento);
+
+    var lista = document.getElementById("lista");
+    var li = document.createElement("li");
+    li.textContent = "Flamengo"
+    lista.appendChild(li);
+
+    times = ["flamengo", "vasco", "bota fogo"]
+
+    var listaDeTimes = document.querySelector('ul.listaTimes')
+
+    for(var i = 0; i < times.length; i++){
+        var time = times[i]
+        var listItem = document.createElement('li')
+        listItem.textContent = time
+        listItem.style.border = '2px solid blue'
+        listaDeTimes.appendChild(listItem)
+    }
+
+</script>
+</html>
